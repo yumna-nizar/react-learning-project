@@ -3,6 +3,7 @@ import Button from './assets/Button/Button.jsx';
 import Student from './Student.jsx';
 import Greeting from './Greeting.jsx';
 import { StrictMode } from 'react';
+import List from './List.jsx';
 
 function App() {
   return(
@@ -17,6 +18,8 @@ function App() {
     <Student sname="yumna" grade="40" isStudent={false}/>
     <Student sname="rasheeda" grade={12} isStudent={true} />
     <Greeting name="nazri" isLoggedin={false}/>
+    <List/>
+
     </StrictMode>
     
    
