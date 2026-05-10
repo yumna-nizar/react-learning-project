@@ -16,7 +16,7 @@ function App() {
     <Button/>
     <Student sname="yumna" grade="40" isStudent={false}/>
     <Student sname="rasheeda" grade={12} isStudent={true} />
-    <Greeting name="nazri" isLoggedin={true}/>
+    <Greeting name="nazri" isLoggedin={false}/>
     </StrictMode>
     
    
