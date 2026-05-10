@@ -18,3 +18,9 @@
   gap: 20px;
   justify-content: center;
 }
+.list-heading{
+  border:solid brown ;
+  background-color: aqua;
+  border-radius:"50%";
+  font-size: 2rem;
+}

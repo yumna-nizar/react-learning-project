@@ -1,18 +1,16 @@
-function List() {
-  const fruits = [
-    { id: 1, name: "piano", calorie: 95 },
-    { id: 2, name: "orange", calorie: 56 },
-    { id: 3, name: "banana", calorie: 45 },
-  ];
-  fruits.sort((a, b) => a.name.localeCompare(b.name));
-  const lowcaloriefruits = fruits.filter((fruit) => fruit.calorie > 50);
-  const listItem = lowcaloriefruits.map((fruit) => (
-    <li key={fruit.id}>{fruit.name}-{fruit.calorie}</li>
+function List(props) {
+  // props.items.sort((a, b) => a.name.localeCompare(b.name));
+  // const lowcaloriefruits = props.items.filter((fruit) => fruit.calorie > 50);
+  const listItem = props.items.map((fruit) => (
+    <li key={fruit.id}>
+      {fruit.name}-{fruit.calorie}
+    </li>
   ));
   return (
-    <>
+    <div style={{ display: "flex", justifyContent: "center", gap: "20px" }}>
+      <h3 className="list-heading">{props.category}</h3>
       <ul>{listItem}</ul>
-    </>
+    </div>
   );
 }
 export default List;
