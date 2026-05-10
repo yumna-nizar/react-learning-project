@@ -13,7 +13,7 @@ function App() {
     <Card/>
     <Card/>
     </div>
-    <Button/>
+   
     <Student sname="yumna" grade="40" isStudent={false}/>
     <Student sname="rasheeda" grade={12} isStudent={true} />
     <Greeting name="nazri" isLoggedin={false}/>
