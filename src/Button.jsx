@@ -1,23 +1,14 @@
+import { useState } from "react";
 function Button() {
-  let count = 0;
-  const handleclick = () => {
-    count++;
-      document.getElementById("clk").innerHTML = count;
-      
-};
-  const handleclick2 = () => {
-    count--;
-      document.getElementById("clk").innerHTML = count;
-      
-};
-
+ 
+const [ct ,setct]=useState(0);
      
   
   return (
     <>
-       <p id="clk"></p>
-      <button onClick={() => handleclick()}>Increase</button>
-      <button onClick={() => handleclick2()}>Decrease</button>
+       <p>{ct}</p>
+      <button onClick={() => setct(ct+1)}>Increase</button>
+      <button onClick={() =>setct(ct-1)}>Decrease</button>
      
     </>
   );
