@@ -1,13 +1,24 @@
 function Button() {
   let count = 0;
-  const handleclick = (e) => {
-      e.target.innerHTML=count;
-      count++;
-    
-  };
+  const handleclick = () => {
+    count++;
+      document.getElementById("clk").innerHTML = count;
+      
+};
+  const handleclick2 = () => {
+    count--;
+      document.getElementById("clk").innerHTML = count;
+      
+};
+
+     
+  
   return (
     <>
-      <button onClick={(e) => handleclick(e)}>Click me</button>
+       <p id="clk"></p>
+      <button onClick={() => handleclick()}>Increase</button>
+      <button onClick={() => handleclick2()}>Decrease</button>
+     
     </>
   );
 }
