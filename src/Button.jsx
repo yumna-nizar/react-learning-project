@@ -1,14 +1,14 @@
 import { useState } from "react";
 function Button() {
  
-const [ct ,setct]=useState(0);
+const [ct ,setct]=useState("yumna");
      
   
   return (
     <>
        <p>{ct}</p>
-      <button onClick={() => setct(ct+1)}>Increase</button>
-      <button onClick={() =>setct(ct-1)}>Decrease</button>
+      <button onClick={() => setct("yusra")}>change</button>
+      <button onClick={() =>setct("yumna")}>orginal</button>
      
     </>
   );
