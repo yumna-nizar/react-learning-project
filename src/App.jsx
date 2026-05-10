@@ -5,6 +5,11 @@ import { StrictMode } from 'react';
 import List from './List.jsx';
 
 function App() {
+    const fruits = [
+    { id: 1, name: "piano", calorie: 95 },
+    { id: 2, name: "orange", calorie: 56 },
+    { id: 3, name: "banana", calorie: 45 },
+  ];
   return(
     <>
    <StrictMode>
