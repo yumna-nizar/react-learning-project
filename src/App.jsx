@@ -1,5 +1,4 @@
 import Card from './Card.jsx';
-import Button from './assets/Button/Button.jsx';
 import Student from './Student.jsx';
 import Greeting from './Greeting.jsx';
 import { StrictMode } from 'react';
