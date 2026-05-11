@@ -1,16 +1,19 @@
 import { useState } from "react";
-function Button() {
- 
-const [ct ,setct]=useState("yumna");
-     
-  
-  return (
-    <>
-       <p>{ct}</p>
-      <button onClick={() => setct("yusra")}>change</button>
-      <button onClick={() =>setct("yumna")}>orginal</button>
-     
-    </>
-  );
+function Button()
+{
+    const[count,setCount]=useState(0);
+    function handleclick()
+    {
+        setCount((count)=>count+1);
+        setCount((count)=>count+1);
+        setCount((count)=>count+1);
+        setCount((count)=>count+1);
+    }
+    return(
+        <>
+        <button onClick={handleclick}>increase</button>
+        <p>{count}</p>
+        </>
+    )
 }
 export default Button;
