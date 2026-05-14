@@ -1,4 +1,5 @@
-import Mycomponent from "./Mycomponent.jsx";
+
+import FoodArray from "./FoodArray.jsx";
 
 
 
@@ -8,7 +9,7 @@ function App() {
     <>
     
         
-        <Mycomponent/>
+        <FoodArray/>
         
 
     </>
