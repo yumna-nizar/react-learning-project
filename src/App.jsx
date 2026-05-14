@@ -1,4 +1,5 @@
-import Button from "./Button.jsx";
+import Mycomponent from "./Mycomponent.jsx";
+
 
 
 function App() {
@@ -6,7 +7,8 @@ function App() {
   return (
     <>
     
-        <Button/>
+        
+        <Mycomponent/>
         
 
     </>
