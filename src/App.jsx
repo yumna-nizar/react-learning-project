@@ -1,5 +1,4 @@
-
-import FoodArray from "./FoodArray.jsx";
+import Car from './Car.jsx';
 
 
 
@@ -7,10 +6,7 @@ function App() {
  
   return (
     <>
-    
-        
-        <FoodArray/>
-        
+    <Car/>
 
     </>
   );
